@@ -22,7 +22,7 @@
     &__item {
         width: 100%;
         @include flex-col(initial, initial);
-        @include screen-x(1050px) {
+        @include screen-x(1100px) {
             height: 320px;
         }
         @include screen-x(700px) {

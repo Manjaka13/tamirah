@@ -66,9 +66,8 @@ const Footer = () => {
 						<div id="donations" className="footer__item">
 							<FooterTitle title="Donations" icon={["fas", "hand-holding-dollar"]} />
 							<p className="pd-b-20 tx-j">
-								Nous vous serions éternellement reconnaissant pour tout coup de main de
-								votre part à l&apos;encontre de notre associations et ses activités.
-								Contactez-nous directement pour toute donation.
+								Contactez-nous directement pour toute donation, nous vous en serions
+								éternellement reconnaissant.
 							</p>
 							<div className="footer__box footer__donation">
 								<p className="tx-j">
