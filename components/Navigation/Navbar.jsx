@@ -40,7 +40,9 @@ const Navbar = ({ atClick = () => console.log("Trigger clicked") }) => {
 	}, []);
 
 	return (
-		<nav className={`navbar w-100 tr-200 ${opaque ? "navbar--opaque" : ""}`}>
+		<nav
+			className={`navbar w-100 f-c-st-st tr-200 ${opaque ? "navbar--opaque" : ""}`}
+		>
 			<div className="container h-100">
 				<div className="w-100 h-100 f-r-be-ce">
 					<div className="navbar__title f-r-st-ce">
@@ -64,7 +66,7 @@ const Navbar = ({ atClick = () => console.log("Trigger clicked") }) => {
 					</div>
 				</div>
 			</div>
-			<div className="container navbar__underline br-5 bg-white tr-100"></div>
+			<div className="container navbar__underline br-5 bg-white tr-200"></div>
 		</nav>
 	);
 };

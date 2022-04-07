@@ -73,14 +73,16 @@
 	}
 
 	&__underline {
-		position: absolute;
-		left: 0;
-		right: 0;
-		margin: auto;
-		bottom: 0;
 		height: 1px;
 		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
 		background: rgba(180, 180, 180);
+		margin-left: calc((100% - 1400px)/2);
+		@include screen-x(1700px) {
+			margin-left: calc((100% - 1000px)/2);
+		}
+		@include screen-x(1400px) {
+			margin-left: calc((100% - 90%)/2);
+		}
 	}
 
 	&--opaque {
@@ -93,7 +95,7 @@
 
 	&:hover {
 		.navbar__underline {
-			opacity: 0;
+			width: 170px;
 		}
 	}
 }
