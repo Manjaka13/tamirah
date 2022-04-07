@@ -30,4 +30,27 @@
         flex: 1;
         text-shadow: 1px 1px 3px black;
     }
+
+    &__box {
+        width: calc(100% - 20px);
+        height: calc(100% - 40px);
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    &__info-separator {
+        width: calc(100% - 40px);
+        height: 1px;
+        background: white;
+    }
+
+    &__info-description {
+        color: rgb(200, 200, 200);
+        height: 90px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__info-image {
+        width: calc(100% - 40px);
+    }
 }

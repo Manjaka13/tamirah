@@ -13,6 +13,10 @@ import {
 	faGears,
 	faImage,
 	faHandHoldingDollar,
+	faCaretDown,
+	faHandshake,
+	faDotCircle,
+	faCircle,
 } from "@fortawesome/free-solid-svg-icons";
 
 /*
@@ -36,5 +40,9 @@ library.add(
 	faHome,
 	faGears,
 	faImage,
-	faHandHoldingDollar
+	faHandHoldingDollar,
+	faCaretDown,
+	faHandshake,
+	faDotCircle,
+	faCircle
 );
