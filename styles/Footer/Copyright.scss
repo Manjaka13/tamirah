@@ -1,0 +1,7 @@
+.copyright {
+	@include screen-x(600px) {
+		flex-direction: column;
+		justify-content: initial;
+		align-items: center;
+	}
+}

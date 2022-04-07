@@ -1,0 +1,51 @@
+/*
+	Import styles here
+*/
+
+@import "./fastui.css";
+@import "./vars.scss";
+@import "./mixins.scss";
+@import "./ui.scss";
+
+.t,
+.theme {
+	color: $color-theme;
+}
+
+.bg-t,
+.bg-theme {
+	background: $color-theme;
+}
+
+.white {
+	color: white;
+}
+
+.bg-white {
+	background: white;
+}
+
+.container {
+	@include flex-row(initial, flex-start);
+	width: 1400px;
+	margin: auto;
+
+	@include screen-x(1700px) {
+		width: 1000px;
+	}
+
+	@include screen-x(1400px) {
+		width: 90%;
+	}
+
+	@include screen-x(900px) {
+		width: calc(100% - 20px);
+	}
+}
+
+@import "./Navigation/Navbar.scss";
+@import "./Navigation/Menu.scss";
+@import "./Footer/Footer.scss";
+@import "./Footer/Copyright.scss";
+@import "./SectionTitle.scss";
+@import "./Spinner.scss";

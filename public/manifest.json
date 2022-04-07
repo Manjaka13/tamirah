@@ -1,0 +1,15 @@
+{
+	"short_name": "Tamirah",
+	"name": "Tamirah Fleur de vie",
+	"icons": [
+		{
+			"src": "tamirah-fleur-de-vie.png",
+			"sizes": "331x393",
+			"type": "image/png"
+		}
+	],
+	"start_url": ".",
+	"display": "standalone",
+	"theme_color": "#4ebe98",
+	"background_color": "#f5f5f5"
+}

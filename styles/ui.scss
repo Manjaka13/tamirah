@@ -1,0 +1,49 @@
+/*
+	Various UI styles
+*/
+
+.button {
+	border: none;
+	padding: 10px 20px;
+	background: $color-theme;
+	color: white;
+	transition: background 0.2s ease-out;
+	border-radius: 5px;
+	cursor: pointer;
+
+	&:hover {
+		background: lighten($color-theme, 20%);
+	}
+
+	&:active {
+		background: darken($color-theme, 20%);
+	}
+}
+
+.button-alt {
+	border: none;
+	padding: 7px 17px;
+	border: 3px $color-theme solid;
+	background: transparent;
+	color: $color-theme;
+	transition: background 0.2s ease-out;
+	border-radius: 5px;
+	cursor: pointer;
+
+	&:hover {
+		background: lighten($color-theme, 20%);
+		color: white;
+	}
+
+	&:active {
+		background: darken($color-theme, 20%);
+		color: white;
+	}
+}
+
+.input {
+	border: none;
+	transition: all 0.2s ease-out;
+	padding: 10px 20px;
+	box-shadow: 0px 0px 1px black;
+}
