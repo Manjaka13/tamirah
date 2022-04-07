@@ -3,6 +3,7 @@ import Heading from "components/Heading";
 import Navigation from "components/Navigation/Navigation";
 import Footer from "components/Footer/Footer";
 import Cover from "components/Cover";
+import About from "components/About";
 
 /*
 	Home page
@@ -18,30 +19,7 @@ const HomePage = () => (
 		<main className="w-100">
 			<Navigation />
 			<Cover />
-			<p>
-				Proin porta iaculis purus, et congue nibh placerat eu. Mauris interdum
-				lectus aliquet erat tincidunt suscipit ultricies eget purus. Nulla mattis
-				orci eget iaculis pharetra. Vestibulum mattis magna non volutpat malesuada.
-				Duis egestas nec sapien quis interdum. Duis placerat finibus vulputate. Nam
-				hendrerit erat turpis, ac condimentum massa commodo vitae. Lorem ipsum dolor
-				sit amet, consectetur adipiscing elit. Cras vel nibh quam.
-			</p>
-			<p>
-				Proin porta iaculis purus, et congue nibh placerat eu. Mauris interdum
-				lectus aliquet erat tincidunt suscipit ultricies eget purus. Nulla mattis
-				orci eget iaculis pharetra. Vestibulum mattis magna non volutpat malesuada.
-				Duis egestas nec sapien quis interdum. Duis placerat finibus vulputate. Nam
-				hendrerit erat turpis, ac condimentum massa commodo vitae. Lorem ipsum dolor
-				sit amet, consectetur adipiscing elit. Cras vel nibh quam.
-			</p>
-			<p>
-				Proin porta iaculis purus, et congue nibh placerat eu. Mauris interdum
-				lectus aliquet erat tincidunt suscipit ultricies eget purus. Nulla mattis
-				orci eget iaculis pharetra. Vestibulum mattis magna non volutpat malesuada.
-				Duis egestas nec sapien quis interdum. Duis placerat finibus vulputate. Nam
-				hendrerit erat turpis, ac condimentum massa commodo vitae. Lorem ipsum dolor
-				sit amet, consectetur adipiscing elit. Cras vel nibh quam.
-			</p>
+			<About />
 			<Footer />
 		</main>
 	</Fragment>
