@@ -45,7 +45,7 @@ const Footer = () => {
 
 	return (
 		<Fragment>
-			<div className="footer bg-white mg-t-20">
+			<div className="footer bg-white">
 				<div className="container">
 					<div className="footer__content w-100 h-320px pd-b-20">
 						{/* Map */}
