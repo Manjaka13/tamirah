@@ -9,8 +9,8 @@ import { HARI } from "helpers/const";
 const Copyright = () => (
 	<footer className="copyright f-r-ce-ce bg-t pd-t-10 pd-b-10">
 		<p className="white pd-r-5">
-			Fait avec <Icon icon={["fas", "heart"]} /> par{" "}
-			<a className="gold b" href={HARI.link} title="Voir le profil">
+			Fait avec <Icon className="red" icon={["fas", "heart"]} /> par{" "}
+			<a className="green b" href={HARI.link} title="Voir le profil">
 				{HARI.name}
 			</a>{" "}
 			.
