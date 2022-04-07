@@ -1,0 +1,14 @@
+.cover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+
+    &__content {
+        margin-top: 76px;
+        height: calc(100vh - 76px);
+        background: url(/images/cover/home.jpg) center center no-repeat;
+        background-size: cover;
+    }
+
+    &__overlay {
+        background: rgba(0, 0, 0, 0.3);
+    }
+}
