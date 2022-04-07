@@ -4,15 +4,15 @@
 	top: 0;
 	left: 0;
 	z-index: 13;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+	box-shadow: none;
 
 	&__title {
-		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 		@include screen-x(400px) {
 			width: 40px;
 			height: 40px;
 		}
 		.image {
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 			@include screen-x(400px) {
 				height: 40px;
 			}
@@ -69,6 +69,25 @@
 			.navbar__section-underline {
 				width: 100%;
 			}
+		}
+	}
+
+	&__underline {
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: auto;
+		bottom: 0;
+		height: 1px;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+		background: rgba(180, 180, 180);
+	}
+
+	&--opaque {
+		background: $color-theme;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+		.navbar__underline {
+			opacity: 0;
 		}
 	}
 }

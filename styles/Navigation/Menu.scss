@@ -41,6 +41,9 @@
         .menu__content {
             top: $navbar-height;
         }
+        .navbar__underline {
+            opacity: 0;
+        }
     }
     &__separator {
         height: 1px;

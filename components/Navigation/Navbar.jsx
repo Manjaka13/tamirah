@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { v4 as uuidv4 } from "uuid";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
@@ -25,32 +25,47 @@ const mappedSection = SECTION.map((section) => (
 	</li>
 ));
 
-const Navbar = ({ atClick = () => console.log("Trigger clicked") }) => (
-	<nav className="navbar bg-t w-100">
-		<div className="container h-100">
-			<div className="w-100 h-100 f-r-be-ce">
-				<div className="navbar__title f-r-st-ce w-50px h-50px br-r bg-white">
-					<img
-						className="image w-100 mg-r-10"
-						src="/images/tamirah-fleur-de-vie.png"
-						alt="Logo Tamirah Fleur de vie"
-					/>
-					<div className="f-c-ce-st">
-						<h1 className="title white">TAMIRAH</h1>
-						<p className="title white">Fleur de vie</p>
+const Navbar = ({ atClick = () => console.log("Trigger clicked") }) => {
+	const [opaque, setOpaque] = useState(false);
+
+	useEffect(() => {
+		const listenScroll = () => {
+			const scroll = window.scrollY;
+			if (scroll < 300) setOpaque(false);
+			else setOpaque(true);
+		};
+		listenScroll();
+		document.addEventListener("scroll", listenScroll);
+		return () => document.removeEventListener("scroll", listenScroll);
+	}, []);
+
+	return (
+		<nav className={`navbar w-100 tr-200 ${opaque ? "navbar--opaque" : ""}`}>
+			<div className="container h-100">
+				<div className="w-100 h-100 f-r-be-ce">
+					<div className="navbar__title f-r-st-ce">
+						<img
+							className="image bg-white mg-r-10 w-50px h-50px br-r o-h"
+							src="/images/tamirah-fleur-de-vie.png"
+							alt="Logo Tamirah Fleur de vie"
+						/>
+						<div className="f-c-st-st">
+							<h1 className="title white">TAMIRAH</h1>
+							<p className="title white">Fleur de vie</p>
+						</div>
+					</div>
+					<ul className="navbar__section f-r-st-ce">{mappedSection}</ul>
+					<div
+						className="navbar__trigger w-50px h-50px white br-r f-c-ce-ce fs-150 p tr-200"
+						title="Ouvrir le menu."
+						onClick={() => atClick()}
+					>
+						<Icon icon={["fas", "bars"]} />
 					</div>
 				</div>
-				<ul className="navbar__section f-r-st-ce">{mappedSection}</ul>
-				<div
-					className="navbar__trigger w-50px h-50px white br-r f-c-ce-ce fs-150 p tr-200"
-					title="Ouvrir le menu."
-					onClick={() => atClick()}
-				>
-					<Icon icon={["fas", "bars"]} />
-				</div>
 			</div>
-		</div>
-	</nav>
-);
-
+			<div className="container navbar__underline br-5 bg-white tr-100"></div>
+		</nav>
+	);
+};
 export default Navbar;
