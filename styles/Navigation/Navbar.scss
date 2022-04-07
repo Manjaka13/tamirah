@@ -83,6 +83,9 @@
 		@include screen-x(1400px) {
 			margin-left: calc((100% - 90%)/2);
 		}
+		@include screen-x(900px) {
+			margin-left: 10px;
+		}
 	}
 
 	&--opaque {

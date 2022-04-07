@@ -29,12 +29,30 @@
     &__title {
         flex: 1;
         text-shadow: 1px 1px 3px black;
+        @include screen-x(900px) {
+            text-align: center;
+        }
+        @include screen-x(600px) {
+            font-size: 3em;
+        }
+    }
+
+    &__activities {
+        @include screen-x(1100px) {
+            width: 40%;
+        }
+        @include screen-x(900px) {
+            display: none;
+        }
     }
 
     &__box {
         width: calc(100% - 20px);
-        height: calc(100% - 40px);
+        min-height: 450px;
         background: rgba(0, 0, 0, 0.8);
+        // @include screen-x(1100px) {
+        //     max-height: 500px;
+        // }
     }
 
     &__info-separator {
