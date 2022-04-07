@@ -25,6 +25,9 @@
         @include screen-x(1050px) {
             height: 320px;
         }
+        @include screen-x(700px) {
+            height: auto;
+        }
         &:last-child {
             @include screen-x(1050px) {
                 width: 100%;
@@ -69,6 +72,19 @@
     }
     &__box {
         flex-grow: 1;
+        @include screen-x(700px) {
+            height: 260px;
+        }
+    }
+    &__contact-list {
+        @include screen-x(700px) {
+            height: 180px;
+        }
+    }
+    &__donation {
+        @include screen-x(700px) {
+            height: auto;
+        }
     }
     &__title {
         @include screen-x($screen-md) {

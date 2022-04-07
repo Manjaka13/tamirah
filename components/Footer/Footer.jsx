@@ -58,17 +58,19 @@ const Footer = () => {
 						{/* Contacts */}
 						<div id="contacts" className="footer__item">
 							<FooterTitle title="Nous contacter" icon={["fas", "envelope"]} />
-							<ul className="footer__box f-c-st-be">{mappedContacts}</ul>
+							<ul className="footer__box footer__contact-list f-c-st-be">
+								{mappedContacts}
+							</ul>
 						</div>
 						{/* Donations */}
-						<div className="footer__item">
+						<div id="donations" className="footer__item">
 							<FooterTitle title="Donations" icon={["fas", "hand-holding-dollar"]} />
 							<p className="pd-b-20 tx-j">
 								Nous vous serions éternellement reconnaissant pour tout coup de main de
 								votre part à l&apos;encontre de notre associations et ses activités.
 								Contactez-nous directement pour toute donation.
 							</p>
-							<div className="footer__box">
+							<div className="footer__box footer__donation">
 								<p className="tx-j">
 									Inscrivez-vous à notre newsletter pour ne jamais rater nos nouveaux
 									produits et futurs évènements !
