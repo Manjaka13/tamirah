@@ -5,16 +5,16 @@ import Copyright from "components/Footer/Copyright";
 import FooterTitle from "components/Footer/FooterTitle";
 import { CONTACTS } from "helpers/const";
 import Spinner from "components/Spinner";
-// import dynamic from "next/dynamic";
+import dynamic from "next/dynamic";
 
 /*
-	Footer wrapper
+	Footer wrapperf
 */
 
 /**Render the map on client side only */
-// const TamirahMap = dynamic(() => import("components/Footer/TamirahMap"), {
-// 	ssr: false,
-// });
+const TamirahMap = dynamic(() => import("components/Footer/TamirahMap"), {
+	ssr: false,
+});
 
 const mappedContacts = CONTACTS.map((contact) => (
 	<li key={uuidv4()}>
@@ -52,7 +52,7 @@ const Footer = () => {
 						<div className="footer__item">
 							<FooterTitle title="Localisation" icon={["fas", "map-marker-alt"]} />
 							<div className="footer__box map br-5 o-h w-100 b-b">
-								{/* <TamirahMap /> */}
+								<TamirahMap />
 							</div>
 						</div>
 						{/* Contacts */}
@@ -60,23 +60,22 @@ const Footer = () => {
 							<FooterTitle title="Nous contacter" icon={["fas", "envelope"]} />
 							<ul className="footer__box f-c-st-be">{mappedContacts}</ul>
 						</div>
-						{/* Heure d'ouverture */}
+						{/* Donations */}
 						<div className="footer__item">
-							<FooterTitle title="Ouvertures" icon={["fas", "calendar-alt"]} />
-							<p className="pd-b-20">
-								Horaires: <span className="b">9h30</span> à{" "}
-								<span className="b">13h</span> - <span className="b">14h30</span> à{" "}
-								<span className="b">18h30</span> et le samedi de{" "}
-								<span className="b">10h</span> à <span className="b">14h</span>
+							<FooterTitle title="Donations" icon={["fas", "hand-holding-dollar"]} />
+							<p className="pd-b-20 tx-j">
+								Nous vous serions éternellement reconnaissant pour tout coup de main de
+								votre part à l&apos;encontre de notre associations et ses activités.
+								Contactez-nous directement pour toute donation.
 							</p>
-							<ul className="w-100 o-h f-r-st-st b-b">Something here</ul>
 							<div className="footer__box">
-								<p className="pd-t-20">Souscrire à notre newsletter:</p>
+								<p className="tx-j">
+									Inscrivez-vous à notre newsletter pour ne jamais rater nos nouveaux
+									produits et futurs évènements !
+								</p>
 								{!loading && !submited && (
 									<form
-										action="https://formsubmit.co/newsletteraventurecouture@gmail.com
-
-"
+										action="https://formsubmit.co/newsletter@tamirah.org"
 										method="POST"
 										className="f-r-st-ce mg-t-20 b-b"
 									>
@@ -87,21 +86,18 @@ const Footer = () => {
 											placeholder="Votre e-mail"
 											required
 										/>
-
 										<input
 											type="hidden"
 											name="_subject"
 											value="Nouveau abonné, l'e-mail y sera attaché!"
-										></input>
-
-										<input type="hidden" name="_captcha" value="false"></input>
-										<input type="text" name="_honey" style={{ display: "none" }}></input>
+										/>
+										<input type="hidden" name="_captcha" value="false" />
+										<input type="text" name="_honey" style={{ display: "none" }} />
 										<input
 											type="hidden"
 											name="message"
 											value="Un nouveau abonné a souscrit à votre newsLetter!"
-										></input>
-
+										/>
 										<button
 											className="button"
 											type="submit"

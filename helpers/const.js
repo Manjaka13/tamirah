@@ -61,21 +61,21 @@ const HARI = {
 const CONTACTS = [
 	{
 		icon: ["fas", "phone"],
-		content: "02 23 62 34 82",
+		content: "+261 34 67 154 30",
 	},
 	{
 		icon: ["fas", "envelope"],
-		content: "singer-chantepie35@orange.fr",
+		content: "fleurdevie@tamirah.org",
 	},
 	{
 		icon: ["fab", "facebook"],
 		content: "Notre page Facebook",
-		link: "https://www.facebook.com/SingerChantepie35",
+		link: "https://www.facebook.com/Tamirah-Fleur-de-vie",
 	},
 	{
 		icon: ["fab", "instagram"],
 		content: "Nous sommes sur insta !",
-		link: "https://www.instagram.com/singerchantepie35/",
+		link: "https://www.instagram.com/Tamirah-Fleur-de-vie",
 	},
 ];
 

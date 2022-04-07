@@ -12,6 +12,7 @@ import {
 	faHome,
 	faGears,
 	faImage,
+	faHandHoldingDollar,
 } from "@fortawesome/free-solid-svg-icons";
 
 /*
@@ -34,5 +35,6 @@ library.add(
 	faBars,
 	faHome,
 	faGears,
-	faImage
+	faImage,
+	faHandHoldingDollar
 );
