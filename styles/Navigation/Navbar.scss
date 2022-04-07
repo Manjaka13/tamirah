@@ -90,4 +90,10 @@
 			opacity: 0;
 		}
 	}
+
+	&:hover {
+		.navbar__underline {
+			opacity: 0;
+		}
+	}
 }
