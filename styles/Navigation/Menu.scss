@@ -65,10 +65,7 @@
         }
     }
     &__list {
-        @include screen-x(900px) {
-            width: 100%;
-        }
-        @include screen-x(700px) {
+        @include screen-x(800px) {
             flex-direction: column;
             justify-content: initial;
             align-items: center;

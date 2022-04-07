@@ -61,7 +61,7 @@ const Menu = ({
 						{!notHome && (
 							<Fragment>
 								<div className="menu__separator w-100 mg-b-10"></div>
-								<ul className="menu__list w-70 f-r-be-ce mg-a pd-b-10">
+								<ul className="menu__list w-100 f-r-be-ce mg-a pd-b-10">
 									{mappedSection}
 								</ul>
 							</Fragment>

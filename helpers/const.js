@@ -46,6 +46,12 @@ const SECTION = [
 		link: "/galerie",
 	},
 	{
+		name: "Donations",
+		icon: ["fas", "hand-holding-dollar"],
+		title: "Aidez-nous à créer un avenir meilleur !",
+		link: "#donations",
+	},
+	{
 		name: "Contacts",
 		icon: ["fas", "envelope"],
 		title: "Découvrir comment nous joindre.",

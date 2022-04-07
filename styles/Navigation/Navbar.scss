@@ -24,7 +24,7 @@
 
 	&__trigger {
 		display: none;
-		@include screen-x(800px) {
+		@include screen-x(1000px) {
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -46,7 +46,7 @@
 	}
 
 	&__section {
-		@include screen-x(800px) {
+		@include screen-x(1000px) {
 			display: none;
 		}
 	}
@@ -62,7 +62,7 @@
 
 	&__section-item {
 		position: relative;
-		@include screen-x(1000px) {
+		@include screen-x(1100px) {
 			margin-left: 20px;
 		}
 		&:hover {
