@@ -1,33 +1,51 @@
 .not-found {
-    height: calc(100vh - 76px);
-    margin-top: 76px;
-
     &__window {
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-
         @include screen-x(1800px) {
             width: 50%;
         }
-
         @include screen-x(1000px) {
             width: 70%;
         }
-
         @include screen-x(800px) {
             width: 80%;
         }
-
         @include screen-x(600px) {
             width: calc(100% - 40px);
         }
-
         @include screen-y(600px) {
-            height: calc(100% - 40px);
+            width: 100%;
+            height: calc(100% - 76px);
+            margin-top: 76px;
+            border-radius: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        @include screen-x(400px) {
+            width: 100%;
+            height: calc(100% - 76px);
+            margin-top: 76px;
+            border-radius: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    &__title,
+    &__text {
+        @include screen-x(400px) {
+            padding: 10px;
         }
     }
 
     &__separator {
         height: 3px;
+        @include screen-x(400px) {
+            width: 40%;
+            margin-left: 10px;
+        }
     }
 
     .back {
