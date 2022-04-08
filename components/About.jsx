@@ -3,7 +3,10 @@ import SectionTitle from "./SectionTitle";
 
 const About = () => (
 	<div className="about w-100 pd-t-40">
-		<div className="container f-r-st-ce">
+		<div
+			className="container"
+			style={{ justifyContent: "center", alignItems: "center" }}
+		>
 			<div className="about__description w-60">
 				<SectionTitle title="Notre association" />
 				<p className="tx-j pd-r-20">
