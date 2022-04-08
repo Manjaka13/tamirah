@@ -25,14 +25,19 @@ const mappedSection = SECTION.map((section) => (
 	</li>
 ));
 
-const Navbar = ({ atClick = () => console.log("Trigger clicked") }) => {
-	const [opaque, setOpaque] = useState(false);
+const Navbar = ({
+	atClick = () => console.log("Trigger clicked"),
+	transparent,
+}) => {
+	const [opaque, setOpaque] = useState(transparent ? false : true);
 
 	useEffect(() => {
 		const listenScroll = () => {
 			const scroll = window.scrollY;
-			if (scroll < 300) setOpaque(false);
-			else setOpaque(true);
+			if (transparent) {
+				if (scroll < 300) setOpaque(false);
+				else setOpaque(true);
+			}
 		};
 		listenScroll();
 		document.addEventListener("scroll", listenScroll);

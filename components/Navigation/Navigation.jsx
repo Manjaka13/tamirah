@@ -6,7 +6,7 @@ import Menu from "components/Navigation/Menu";
 	Navbar and menu wrapper
 */
 
-const Navigation = ({ notHome = false }) => {
+const Navigation = ({ notHome = false, transparent = true }) => {
 	const [opened, setOpened] = useState(false);
 
 	const toggle = () => setOpened((prevState) => !prevState);
@@ -14,7 +14,7 @@ const Navigation = ({ notHome = false }) => {
 
 	return (
 		<Fragment>
-			<Navbar atClick={() => toggle()} />
+			<Navbar atClick={() => toggle()} transparent={transparent} />
 			<Menu opened={opened} close={() => close()} notHome={notHome} />
 		</Fragment>
 	);
