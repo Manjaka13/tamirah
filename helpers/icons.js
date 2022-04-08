@@ -18,6 +18,7 @@ import {
 	faDotCircle,
 	faCircle,
 	faStar,
+	faShare,
 } from "@fortawesome/free-solid-svg-icons";
 
 /*
@@ -46,5 +47,6 @@ library.add(
 	faHandshake,
 	faDotCircle,
 	faCircle,
-	faStar
+	faStar,
+	faShare
 );
