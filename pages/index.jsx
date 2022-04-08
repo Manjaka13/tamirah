@@ -6,6 +6,7 @@ import Cover from "components/Cover";
 import About from "components/About";
 import WhatWeDo from "components/WhatWeDo";
 import Goals from "components/Goals";
+import MobileApp from "components/MobileApp";
 
 /*
 	Home page
@@ -24,6 +25,7 @@ const HomePage = () => (
 			<About />
 			<WhatWeDo />
 			<Goals />
+			<MobileApp />
 			<Footer />
 		</main>
 	</Fragment>
