@@ -15,7 +15,7 @@ const NotFoundPage = () => (
 			image="/assets/representation.jpg"
 		/>
 		<main className="w-100">
-			<Navigation />
+			<Navigation transparent={false} />
 			<NotFound />
 		</main>
 	</Fragment>

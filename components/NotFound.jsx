@@ -7,7 +7,7 @@ import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 */
 
 const NotFound = () => (
-	<div className="not-found w-100 h-100 o-h f-c-ce-ce bg-t">
+	<div className="not-found w-100 h-100 o-h f-c-ce-ce">
 		<div className="not-found__window w-30 br-10 bg-white">
 			<h2 className="not-found__title pd-20">
 				<Icon icon={["fas", "exclamation-circle"]} /> Oups, contenu introuvable
