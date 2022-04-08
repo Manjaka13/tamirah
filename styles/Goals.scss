@@ -1,0 +1,54 @@
+.goals {
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 20px;
+        @include screen-x(1050px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include screen-x(550px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    
+    &__icon-box {
+        width: 130px;
+        height: 130px;
+        margin: auto;
+        margin-top: 20px;
+        @include screen-x(1050px) {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    &__item {
+        height: 400px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        @include screen-x(1050px) {
+            height: 300px;
+        }
+        @include screen-x(750px) {
+            height: 340px;
+        }
+        @include screen-x(550px) {
+            height: 320px;
+        }
+        &:hover {
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+            .goals__icon-box {
+                animation: 0.5s animGoal ease-out;
+                @keyframes animGoal {
+                    from {
+                        transform: rotate3d(0, 1, 0, 0deg);
+                    }
+                    to {
+                        transform: rotate3d(0, 1, 0, 360deg);
+                    }
+                }
+            }
+        }
+    }
+
+}

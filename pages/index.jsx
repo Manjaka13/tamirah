@@ -5,6 +5,7 @@ import Footer from "components/Footer/Footer";
 import Cover from "components/Cover";
 import About from "components/About";
 import WhatWeDo from "components/WhatWeDo";
+import Goals from "components/Goals";
 
 /*
 	Home page
@@ -22,6 +23,7 @@ const HomePage = () => (
 			<Cover />
 			<About />
 			<WhatWeDo />
+			<Goals />
 			<Footer />
 		</main>
 	</Fragment>
