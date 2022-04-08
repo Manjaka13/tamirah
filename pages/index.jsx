@@ -4,6 +4,7 @@ import Navigation from "components/Navigation/Navigation";
 import Footer from "components/Footer/Footer";
 import Cover from "components/Cover";
 import About from "components/About";
+import WhatWeDo from "components/WhatWeDo";
 
 /*
 	Home page
@@ -20,6 +21,7 @@ const HomePage = () => (
 			<Navigation />
 			<Cover />
 			<About />
+			<WhatWeDo />
 			<Footer />
 		</main>
 	</Fragment>
