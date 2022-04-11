@@ -34,10 +34,10 @@ const SECTION = [
 		link: "/activite",
 	},
 	{
-		name: "Evènements",
+		name: "Activités",
 		icon: ["fas", "calendar-alt"],
-		title: "Ne ratez pas nos dernières oeuvres.",
-		link: "/evenements",
+		title: "Découvrez nos différentes activités.",
+		link: "/activite",
 	},
 	{
 		name: "Galerie",

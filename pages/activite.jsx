@@ -2,25 +2,25 @@ import React, { Fragment } from "react";
 import Heading from "components/Heading";
 import Navigation from "components/Navigation/Navigation";
 import Footer from "components/Footer/Footer";
-import Events from "components/Events";
+import Activite from "components/Activite";
 
 /*
-	Events page
+	Activité page
 */
 
-const EventPage = () => (
+const ActivitePage = () => (
 	<Fragment>
 		<Heading
-			title="Les évènements chez TAMIRAH Fleur de vie"
+			title="Activités chez TAMIRAH Fleur de vie"
 			description="Nous organisons plusieurs évènements et activités pour apporter de l'aide à tout le monde."
 			image="/assets/representation.jpg"
 		/>
 		<main className="w-100">
 			<Navigation transparent={false} />
-			<Events />
+			<Activite />
 			<Footer />
 		</main>
 	</Fragment>
 );
 
-export default EventPage;
+export default ActivitePage;
