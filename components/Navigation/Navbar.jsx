@@ -35,7 +35,7 @@ const Navbar = ({
 		const listenScroll = () => {
 			const scroll = window.scrollY;
 			if (transparent) {
-				if (scroll < 300) setOpaque(false);
+				if (scroll < 100) setOpaque(false);
 				else setOpaque(true);
 			}
 		};
