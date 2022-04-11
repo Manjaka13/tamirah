@@ -29,6 +29,7 @@ import {
 	faCheckCircle,
 	faKey,
 	faLock,
+	faLink,
 } from "@fortawesome/free-solid-svg-icons";
 
 /*
@@ -68,5 +69,6 @@ library.add(
 	faInfoCircle,
 	faCheckCircle,
 	faKey,
-	faLock
+	faLock,
+	faLink
 );

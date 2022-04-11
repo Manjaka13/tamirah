@@ -12,14 +12,15 @@ const activiteList = [
 		location: "Ambano",
 		date: "12/10/2021",
 		link: "htts://www.facebook.com/",
+		album: "/galerie?album=reboisement-ambano",
 	},
 	{
 		title: "Miel BIO",
 		image: "/images/aide-pour-les-demunis.jpg",
 		description:
 			"Nous produisons nous-même du miel bio fait maison, grâce aux fonds que nous récoltons à travers cette activité nous pouvons contribuer à aider plusieurs sans-abris.",
-		location: "Antsirabe",
 		link: "htts://www.facebook.com/",
+		album: "/galerie?album=miel-bio",
 	},
 	{
 		title: "Soutien aux femmes",
@@ -32,8 +33,8 @@ const activiteList = [
 		image: "/images/aide-pour-les-demunis.jpg",
 		description:
 			"Nous vendons plusieurs parfums de confiture que nous confectionnons manuellement dans nos ateliers avec des ingrédients frais et totalement garantis BIO.",
-		location: "Antsirabe",
 		link: "htts://www.facebook.com/",
+		album: "/galerie?album=confiture-tamirah",
 	},
 ];
 
@@ -51,18 +52,26 @@ const mappedActivite = activiteList.map((activite) => (
 						</a>
 					</Link>
 				</li>
-				{activite.location && (
+				{activite.link && (
 					<li className="action-item tx-c">
-						<a className="link t fs-260 tr-200" href="#0" title="Voir le lieu">
-							<Icon icon={["fas", "map-marker-alt"]} />
+						<a
+							className="link t fs-260 tr-200"
+							href={activite.link}
+							title="Voir l'article"
+						>
+							<Icon icon={["fas", "link"]} />
 						</a>
 					</li>
 				)}
-				<li className="action-item tx-c">
-					<a className="link t fs-260 tr-200" href="#0" title="Voir les images">
-						<Icon icon={["fas", "image"]} />
-					</a>
-				</li>
+				{activite.album && (
+					<li className="action-item tx-c">
+						<Link href={activite.album} passHref>
+							<a className="link t fs-260 tr-200" title="Voir les images">
+								<Icon icon={["fas", "image"]} />
+							</a>
+						</Link>
+					</li>
+				)}
 			</ul>
 			<div
 				className="image w-100 h-100 tr-500"
