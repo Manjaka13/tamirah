@@ -9,25 +9,25 @@ import { Slide } from "react-slideshow-image";
 
 const boxInfo = [
 	{
-		title: "Aide pour les démunis",
+		title: "Que faisons-nous ?",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam magna dui, blandit eget malesuada sit amet, dapibus bibendum nibh. Vestibulum ante ipsum primis.",
+			"Nos activités diverses nous mettent sur plusieurs front, telles que le reboisement des forêts ou oeuvrer pour aider les plus démunis.",
 		icon: ["fas", "handshake"],
 		link: "/evenements",
 		image: "/images/aide-pour-les-demunis.jpg",
 	},
 	{
-		title: "Découvrez les produits TAMIRAH",
+		title: "Les produits TAMIRAH",
 		description:
-			"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In a quam sit amet velit volutpat tristique.",
+			"Nous produisons nous même des produits bio fait-main telles que des confitures ou encore du miel, de l'huile de soin capillaire...",
 		icon: ["fas", "gears"],
 		link: "/activites",
 		image: "/images/aide-pour-les-demunis.jpg",
 	},
 	{
-		title: "Faites un don",
+		title: "Nous aider ?",
 		description:
-			"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In a quam sit amet velit volutpat tristique.",
+			"Nous sommes ouverts à de nouveaux membres pour nous aider ou des financement pour nos projets n'hésitez pas à nous contacter !",
 		icon: ["fas", "hand-holding-dollar"],
 		link: "#donations",
 		image: "/images/aide-pour-les-demunis.jpg",
