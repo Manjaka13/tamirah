@@ -30,7 +30,7 @@ const mappedContent = SECTION.filter((item, key) => key != 0 && key <= 4).map(
 const WhatWeDo = () => (
 	<div className="whatwedo w-100 pd-t-40">
 		<div className="container" style={{ flexDirection: "column" }}>
-			<SectionTitle title="Que faisons-nous" />
+			<SectionTitle title="TAMIRAH Fleur de vie" />
 			<p className="tx-j pd-b-20">
 				Soyez libre de visionner toutes les sections du site et nous faire un retour
 				pour tout avis positif pouvant améliorer notre association. Nous avons
