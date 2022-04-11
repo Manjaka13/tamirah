@@ -6,11 +6,58 @@
         flex-direction: column;
     }
 
+    &__title {
+        @include screen-x(800px) {
+            font-size: 2.3em;
+        }
+        @include screen-x(600px) {
+            font-size: 1.8em;
+        }
+    }
+
     &__box {
         flex: 1;
     }
 
+    &__list {
+        @include screen-x(600px) {
+            flex-direction: column;
+        }
+    }
+
     &__item {
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        @include screen-x(700px) {
+            padding: 10px;
+        }
+        @include screen-x(600px) {
+            width: calc(100% - 20px);
+            margin-bottom: 20px;
+        }
+    }
+
+    &__image {
+        @include screen-x(1700px) {
+            width: 100px;
+        }
+    }
+
+    &__logo {
+        @include screen-x(1100px) {
+            height: 250px;
+        }
+        @include screen-x(900px) {
+            margin-top: 40px;
+            height: 350px;
+        }
+        @include screen-x(500px) {
+            height: 200px;
+        }
+    }
+
+    &__box {
+        @include screen-x(900px) {
+            flex-direction: column-reverse;
+        }
     }
 }

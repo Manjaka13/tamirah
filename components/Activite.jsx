@@ -46,7 +46,7 @@ const mappedActivite = activiteList.map((activite) => (
 		<div className="representation h-100">
 			<ul className="actions h-80 o-h f-c-st-ev">
 				<li className="action-item tx-c">
-					<Link href="/donations" passHref>
+					<Link href="/donation" passHref>
 						<a className="link t fs-260 tr-200" title="Soutenir cette cause">
 							<Icon icon={["fas", "hand-holding-dollar"]} />
 						</a>

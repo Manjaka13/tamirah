@@ -8,16 +8,16 @@ const Donation = () => (
 				<Icon icon={["fas", "handshake"]} /> Comment nous aider ?
 			</h2>
 			<div className="w-35 h-5px br-5 bg-t mg-b-20"></div>
-			<div className="f-r-be-st w-100">
+			<div className="donation__box f-r-be-ce w-100">
 				<img
-					className="h-350px mg-r-40"
+					className="donation__logo h-350px mg-r-40"
 					src="/images/tamirah-fleur-de-vie.png"
 					alt="TAMIRAH Fleur de vie"
 				/>
 				<div className="donation__box">
 					<h3 className="fs-160 pd-b-20 t">Faire un don :)</h3>
 					<p className="tx-j pd-b-20">
-						<i className="b">TAMIRAH Fleur</i> de vie est une organisation à but non
+						<i className="b">TAMIRAH Fleur de vie</i> est une organisation à but non
 						lucratif, toutefois, nous avons besoin de dons et de financements pour
 						pouvoir continuer à soutenir cette noble cause.
 					</p>
@@ -32,17 +32,29 @@ const Donation = () => (
 						<li className="donation__item pd-20 bg-white br-10">
 							<h4 className="mg-b-10">Par Orange Money au:</h4>
 							<p className="mg-b-10 t">+261 32 12 145 99</p>
-							<img className="w-200px" src="/images/logo-money.png" alt="Money" />
+							<img
+								className="donation__image w-200px"
+								src="/images/logo-money.png"
+								alt="Money"
+							/>
 						</li>
 						<li className="donation__item pd-20 bg-white br-10">
 							<h4 className="mg-b-10">Par Airtel Money au:</h4>
 							<p className="mg-b-10 t">+261 33 26 120 00</p>
-							<img className="w-200px" src="/images/logo-money.png" alt="Money" />
+							<img
+								className="donation__image w-200px"
+								src="/images/logo-money.png"
+								alt="Money"
+							/>
 						</li>
 						<li className="donation__item pd-20 bg-white br-10">
 							<h4 className="mg-b-10">Par MVola au:</h4>
 							<p className="mg-b-10 t">+261 34 67 154 30</p>
-							<img className="w-200px" src="/images/logo-money.png" alt="Money" />
+							<img
+								className="donation__image w-200px"
+								src="/images/logo-money.png"
+								alt="Money"
+							/>
 						</li>
 					</ul>
 				</div>
