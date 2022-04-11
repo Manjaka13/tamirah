@@ -49,7 +49,7 @@ const SECTION = [
 		name: "Donations",
 		icon: ["fas", "hand-holding-dollar"],
 		title: "Aidez-nous à créer un avenir meilleur !",
-		link: "#donations",
+		link: "/donation",
 	},
 	{
 		name: "Contacts",
