@@ -1,7 +1,7 @@
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { config } from "@fortawesome/fontawesome-svg-core";
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faGoogle } from "@fortawesome/free-brands-svg-icons";
 import {
 	faEnvelope,
 	faHeart,
@@ -22,6 +22,13 @@ import {
 	faExclamationCircle,
 	faTree,
 	faStore,
+	faNewspaper,
+	faUserPlus,
+	faFile,
+	faInfoCircle,
+	faCheckCircle,
+	faKey,
+	faLock,
 } from "@fortawesome/free-solid-svg-icons";
 
 /*
@@ -34,7 +41,7 @@ config.autoAddCss = false;
 library.add(
 	// Brands
 	faFacebook,
-	faInstagram,
+	faGoogle,
 	// Standard icons
 	faEnvelope,
 	faHeart,
@@ -54,5 +61,12 @@ library.add(
 	faShare,
 	faExclamationCircle,
 	faTree,
-	faStore
+	faStore,
+	faNewspaper,
+	faUserPlus,
+	faFile,
+	faInfoCircle,
+	faCheckCircle,
+	faKey,
+	faLock
 );
