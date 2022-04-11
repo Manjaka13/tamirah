@@ -9,9 +9,9 @@ const SOCIAL = [
 		link: "https://www.facebook.com/SingerChantepie35",
 	},
 	{
-		icon: ["fab", "instagram"],
-		title: "Nous suivre sur Instagram",
-		link: "https://www.instagram.com/singerchantepie35/",
+		icon: ["fas", "hand-holding-dollar"],
+		title: "Faire un don",
+		link: "/donations",
 	},
 	{
 		icon: ["fas", "envelope"],
@@ -22,14 +22,14 @@ const SOCIAL = [
 
 const SECTION = [
 	{
-		name: "Accueil",
+		name: "TAMIRAH",
 		icon: ["fas", "home"],
 		title: "Accueil Fleur de vie.",
 		link: "/",
 	},
 	{
 		name: "Nos activités",
-		icon: ["fas", "gears"],
+		icon: ["fas", "store"],
 		title: "Découvrez nos différentes activités.",
 		link: "/activite",
 	},
@@ -79,9 +79,14 @@ const CONTACTS = [
 		link: "https://www.facebook.com/Tamirah-Fleur-de-vie",
 	},
 	{
-		icon: ["fab", "instagram"],
-		content: "Nous sommes sur insta !",
-		link: "https://www.instagram.com/Tamirah-Fleur-de-vie",
+		icon: ["fas", "lock"],
+		content: "Connexion/Inscription",
+		link: "/rejoindre",
+	},
+	{
+		icon: ["fas", "file"],
+		content: "Statut légal",
+		link: "/documents",
 	},
 ];
 
