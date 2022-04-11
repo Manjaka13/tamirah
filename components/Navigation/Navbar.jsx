@@ -9,14 +9,14 @@ import { SECTION } from "helpers/const";
 */
 
 const mappedSection = SECTION.map((section) => (
-	<li
-		className="navbar__section-item mg-l-40 pd-t-25 pd-b-25 f-c-ce-st p"
-		key={uuidv4()}
-	>
+	<li className="navbar__section-item mg-l-40 f-c-ce-st p" key={uuidv4()}>
 		<Link href={section.link} passHref>
-			<div>
-				<Icon className="white" icon={section.icon} />{" "}
-				<a className="navbar__section-link white" title={section.title}>
+			<div className="f-r-st-ce">
+				<Icon className="white mg-r-5" icon={section.icon} />{" "}
+				<a
+					className="navbar__section-link white pd-t-25 pd-b-25"
+					title={section.title}
+				>
 					{section.name}
 				</a>
 			</div>
