@@ -19,6 +19,7 @@ import {
 	faCircle,
 	faStar,
 	faShare,
+	faExclamationCircle,
 } from "@fortawesome/free-solid-svg-icons";
 
 /*
@@ -48,5 +49,6 @@ library.add(
 	faDotCircle,
 	faCircle,
 	faStar,
-	faShare
+	faShare,
+	faExclamationCircle
 );
