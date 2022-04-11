@@ -28,10 +28,10 @@ const SECTION = [
 		link: "/",
 	},
 	{
-		name: "Nos activités",
+		name: "Nos produits",
 		icon: ["fas", "store"],
-		title: "Découvrez nos différentes activités.",
-		link: "/activite",
+		title: "Découvrez nos différents produits en vente.",
+		link: "/produits",
 	},
 	{
 		name: "Activités",
