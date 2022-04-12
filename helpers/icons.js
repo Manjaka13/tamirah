@@ -30,6 +30,8 @@ import {
 	faKey,
 	faLock,
 	faLink,
+	faUser,
+	faCaretUp,
 } from "@fortawesome/free-solid-svg-icons";
 
 /*
@@ -70,5 +72,7 @@ library.add(
 	faCheckCircle,
 	faKey,
 	faLock,
-	faLink
+	faLink,
+	faUser,
+	faCaretUp
 );

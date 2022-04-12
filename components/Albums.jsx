@@ -6,32 +6,22 @@ const albumList = [
 	{
 		title: "Reboisement à Ambano",
 		image: "/images/aide-pour-les-demunis.jpg",
-		location: "Antsirabe",
-		date: "09/06/2021",
 	},
 	{
 		title: "Reboisement à Ambano",
 		image: "/images/aide-pour-les-demunis.jpg",
-		location: "Antsirabe",
-		date: "09/06/2021",
 	},
 	{
 		title: "Reboisement à Ambano",
 		image: "/images/aide-pour-les-demunis.jpg",
-		location: "Antsirabe",
-		date: "09/06/2021",
 	},
 	{
 		title: "Reboisement à Ambano",
 		image: "/images/aide-pour-les-demunis.jpg",
-		location: "Antsirabe",
-		date: "09/06/2021",
 	},
 	{
 		title: "Reboisement à Ambano",
 		image: "/images/aide-pour-les-demunis.jpg",
-		location: "Antsirabe",
-		date: "09/06/2021",
 	},
 ];
 
@@ -44,18 +34,12 @@ const mappedAlbums = albumList.map((album) => (
 		}}
 		key={uuidv4()}
 	>
-		<p className="w-100 tx-c pd-b-20">
-			<button className="button-alt" title="Voir cet album">
-				<Icon icon={["fas", "image"]} /> Voir
-			</button>
-		</p>
-		<div className="albums__info w-100">
-			<h2 className="fs-100 white pd-10 pd-b-0">{album.title}</h2>
-			<p className="fs-80 white pd-10">
-				<Icon icon={["fas", "map-marker-alt"]} /> {album.location}
-			</p>
-			<p className="fs-80 white pd-10 pd-t-0">
-				<Icon icon={["fas", "calendar-alt"]} /> {album.date}
+		<div className="albums__info w-100 tr-200">
+			<h2 className="fs-100 white pd-10">{album.title}</h2>
+			<p className="w-100 tx-c pd-b-20">
+				<button className="button-alt" title="Voir cet album">
+					<Icon icon={["fas", "image"]} /> Voir
+				</button>
 			</p>
 		</div>
 	</li>

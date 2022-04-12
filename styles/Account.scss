@@ -1,0 +1,107 @@
+.account {
+    width: 100%;
+    height: calc(100vh - 76px);
+    padding-top: 76px;
+
+    &__window {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    &__separator {
+        width: calc(100% - 40px);
+        margin: auto;
+        height: 1px;
+        background: rgb(210, 210, 210);
+    }
+
+    &__input-box {
+        .account__error {
+            display: none;
+            opacity: 0;
+        }
+        .account__error-icon {
+            opacity: 0;
+        }
+        &--error {
+            .account__error {
+                display: block;
+            }
+            .account__error-icon {
+                opacity: 1;
+            }
+        }
+    }
+    
+    &__input,
+    &__label {
+        padding: 10px 20px;
+    }
+    
+    &__label {
+        position: relative;
+        background: rgb(220, 220, 220);
+        width: 140px;
+        border-radius: 5px 0 0 5px;
+        color: rgb(80, 80, 80);
+        &:hover {
+            .account__error {
+                opacity: 1;
+            }
+        }
+    }
+    
+    &__input {
+        border: none;
+        flex: 1;
+        background: rgb(240, 240, 240);
+        border-radius: 0px 5px 5px 0;
+    }
+
+    &__error-icon {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        color: rgb(219, 191, 32);
+    }
+
+    &__error {
+        display: block;
+        position: absolute;
+        width: 200px;
+        right: calc(-50% + 7px);
+        bottom: calc(-37px);
+        z-index: 2;
+        background: rgb(219, 191, 32);
+        color: white;
+        font-size: 0.8em;
+        box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4);
+    }
+
+    &__error-text {
+        display: block;
+    }
+
+    &__error-caret {
+        display: block;
+        position: absolute;
+        font-size: 2em;
+        top: -20px;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        color: rgb(219, 191, 32);
+    }
+
+    &__caption {
+        padding: 20px;
+        font-weight: bold;
+        color: red;
+    }
+}
+
+.signin {
+    &__window {
+        width: 600px;
+        height: 350px;
+    }
+}
