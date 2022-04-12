@@ -6,6 +6,7 @@ import Cover from "components/Cover";
 import WhatWeDo from "components/WhatWeDo";
 import Goals from "components/Goals";
 import MobileApp from "components/MobileApp";
+import Donation from "components/Donation";
 
 /*
 	Home page
@@ -24,6 +25,7 @@ const HomePage = () => (
 			<WhatWeDo />
 			<Goals />
 			<MobileApp />
+			<Donation />
 			<Footer />
 		</main>
 	</Fragment>

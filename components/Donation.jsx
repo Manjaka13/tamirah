@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 
 const Donation = () => (
-	<div className="donation">
+	<div id="donation" className="donation">
 		<div className="container">
 			<h2 className="donation__title pd-b-20 fs-300">
 				<Icon icon={["fas", "handshake"]} /> Comment nous aider ?

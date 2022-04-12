@@ -5,8 +5,7 @@
 	position: relative;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 	overflow: visible;
-	margin-top: 40px;
-	margin-bottom: 80px;
+	margin-top: 80px;
 
 	@include screen-x(850px) {
 		height: 300px;
