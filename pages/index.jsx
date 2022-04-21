@@ -16,7 +16,7 @@ const HomePage = () => (
 	<Fragment>
 		<Heading
 			title="Tamirah - Fleur de vie"
-			description="Nous sommes une association caritative qui oeuvre pour aider les plus démunis."
+			description="Nous sommes une association qui oeuvre pour agir, aider, aimer et servir."
 			image="/assets/representation.jpg"
 		/>
 		<main className="w-100">

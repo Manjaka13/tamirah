@@ -14,7 +14,7 @@ const boxInfo = [
 			"Nos activités diverses nous mettent sur plusieurs front, telles que le reboisement des forêts ou oeuvrer pour aider les plus démunis.",
 		icon: ["fas", "handshake"],
 		link: "/evenements",
-		image: "/images/aide-pour-les-demunis.jpg",
+		image: "/images/tamirah.jpg",
 	},
 	{
 		title: "Les produits TAMIRAH",
@@ -22,7 +22,7 @@ const boxInfo = [
 			"Nous produisons nous même des produits bio fait-main telles que des confitures ou encore du miel, de l'huile de soin capillaire...",
 		icon: ["fas", "gears"],
 		link: "/activites",
-		image: "/images/aide-pour-les-demunis.jpg",
+		image: "/images/content/277593361_544645320407373_6761982258435821282_n.jpg",
 	},
 	{
 		title: "Nous aider ?",
@@ -30,7 +30,7 @@ const boxInfo = [
 			"Nous sommes ouverts à de nouveaux membres pour nous aider ou des financement pour nos projets n'hésitez pas à nous contacter !",
 		icon: ["fas", "hand-holding-dollar"],
 		link: "#donations",
-		image: "/images/aide-pour-les-demunis.jpg",
+		image: "/images/content/277924603_1455464788242174_1179110489694652073_n.jpg",
 	},
 ];
 
@@ -69,7 +69,8 @@ const Cover = () => (
 			>
 				<div className="w-100 h-80 f-r-st-ce">
 					<h2 className="cover__title white fs-430">
-						La vision d&apos;un <span className="t">avenir</span> meilleur pour tous.
+						Aider c&apos;est pas vouloir maîtriser mais{" "}
+						<span className="t">servir.</span>
 					</h2>
 					<div className="cover__activities w-35 h-100 f-c-en-ce">
 						<div className="cover__box br-10 o-h">

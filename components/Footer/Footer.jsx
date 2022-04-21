@@ -35,8 +35,11 @@ const Footer = () => {
 	const [loading, setLoading] = useState(false);
 	const [submited, setSubmited] = useState(false);
 
-	const handleSubmit = () => {
+	const handleSubmit = (e) => {
+		e.preventDefault();
 		setLoading(true);
+		const form = new FormData();
+		form.append("");
 		setTimeout(() => {
 			setLoading(false);
 			setSubmited(true);
@@ -76,7 +79,7 @@ const Footer = () => {
 								</p>
 								{!loading && !submited && (
 									<form
-										action="https://formsubmit.co/newsletter@tamirah.org"
+										action="https://formsubmit.co/2f90e4ca711705dcb6074424e2bdb756"
 										method="POST"
 										className="f-r-st-ce mg-t-20 b-b"
 									>

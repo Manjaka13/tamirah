@@ -30,30 +30,39 @@ const Donation = () => (
 					</p>
 					<ul className="donation__list pd-t-20 f-r-be-st">
 						<li className="donation__item pd-20 bg-white br-10">
-							<h4 className="mg-b-10">Par Orange Money au:</h4>
-							<p className="mg-b-10 t">+261 32 12 145 99</p>
+							<h4 className="tx-c mg-b-10">Par Orange Money au:</h4>
+							<p className="tx-c mg-b-10 t">+261 32 05 183 08</p>
 							<img
 								className="donation__image w-200px"
-								src="/images/logo-money.png"
-								alt="Money"
+								src="/images/orange-money.jpg"
+								alt="Donation Orange Money TAMIRAH"
 							/>
 						</li>
 						<li className="donation__item pd-20 bg-white br-10">
-							<h4 className="mg-b-10">Par Airtel Money au:</h4>
-							<p className="mg-b-10 t">+261 33 26 120 00</p>
+							<h4 className="tx-c mg-b-10">Par Airtel Money au:</h4>
+							<p className="tx-c mg-b-10 t">+261 33 90 183 08</p>
 							<img
 								className="donation__image w-200px"
-								src="/images/logo-money.png"
-								alt="Money"
+								src="/images/airtel-money.jpg"
+								alt="Donation Airtel Money TAMIRAH"
 							/>
 						</li>
 						<li className="donation__item pd-20 bg-white br-10">
-							<h4 className="mg-b-10">Par MVola au:</h4>
-							<p className="mg-b-10 t">+261 34 67 154 30</p>
+							<h4 className="tx-c mg-b-10">Par MVola au:</h4>
+							<p className="tx-c mg-b-10 t">+261 34 07 183 08</p>
 							<img
 								className="donation__image w-200px"
-								src="/images/logo-money.png"
-								alt="Money"
+								src="/images/mvola.jpg"
+								alt="Donation MVola TAMIRAH"
+							/>
+						</li>
+						<li className="donation__item pd-20 bg-white br-10">
+							<h4 className="tx-c mg-b-10">Par virement au:</h4>
+							<p className="tx-c mg-b-10 t">00015 00011 06875100001 72</p>
+							<img
+								className="donation__image w-200px"
+								src="/images/sipem.jpg"
+								alt="Donation virement bancaire TAMIRAH"
 							/>
 						</li>
 					</ul>

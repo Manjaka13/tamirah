@@ -5,13 +5,13 @@ import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import SectionTitle from "./SectionTitle";
 import { SECTION } from "helpers/const";
 
-const mappedContent = SECTION.filter((item, key) => key != 0 && key <= 4).map(
+const mappedContent = SECTION.filter((item, key) => key != 0/* && key <= 4*/).map(
 	(item) => (
 		<div
 			className="whatwedo__item o-h"
 			key={uuidv4()}
 			style={{
-				background: `url(/images/aide-pour-les-demunis.jpg) center center no-repeat`,
+				background: `url(${item.image}) center center no-repeat`,
 				backgroundSize: "cover",
 			}}
 		>

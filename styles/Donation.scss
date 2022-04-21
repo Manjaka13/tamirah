@@ -20,13 +20,27 @@
     }
 
     &__list {
-        @include screen-x(600px) {
-            flex-direction: column;
+        @include screen-x(1700px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: auto;
+            grid-gap: 20px;
+        }
+        @include screen-x(500px) {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-auto-rows: auto;
+            grid-gap: 20px;
         }
     }
 
     &__item {
+        // width: 170px;
+        height: 150px;
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        @include screen-x(1700px) {
+            height: 130px;
+        }
         @include screen-x(700px) {
             padding: 10px;
         }
@@ -37,6 +51,10 @@
     }
 
     &__image {
+        display: block;
+        border-radius: 5px;
+        overflow: hidden;
+        margin: auto;
         @include screen-x(1700px) {
             width: 100px;
         }
