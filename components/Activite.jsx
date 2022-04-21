@@ -114,7 +114,7 @@ const mappedActivite = activiteList.map((activite) => (
 const Activite = () => (
 	<div className="activite">
 		<div className="container">
-			<div className="activite__list pd-b-40">{mappedActivite}</div>
+			{/*<div className="activite__list pd-b-40">{mappedActivite}</div>*/}
 		</div>
 	</div>
 );

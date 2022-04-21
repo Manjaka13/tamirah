@@ -46,13 +46,13 @@ Nous puisons un avenir prospère pour ces enfants qui n&apos;ont jamais mis les 
 					</div>
 				</div>
 				<div className="cover-list__words mg-l-40 bg-white pd-20">
-					<h3 className="fs-180 pd-b-20"><span className="t">Agir</span> et <span className="t">former</span> pour donner des raisons d&apos;<span className="t">espérer</span></h3>
+					<h3 className="fs-180 pd-b-20">Tendre la main à tous</h3>
 					<p className="tx-j pd-b-20">
-						Avec nos capacités, nous avons mis en place une association de femmes bénévoles afin d&apos;offrir aux plus démunis une lueur d&apos;espoir pour une vie meilleure.
+						L&apos;objectif primaire de TAMIRAH Fleur de vie consiste à aider, à tendre une main bienveillante pour les faibles et les plus démunis de notre pays. Il s&apos;agit d&apos;une action commune en vue d&apos;améliorer les conditions de vie et de travail, à trouver des débouchés pour des produits qui visent à former un capital assez conséquent en plus de vos dons pour mieux cerner leurs besoins.
 					</p>
-					<p className="tx-j">
+					{/*<p className="tx-j">
 						Nous puisons un avenir prospère pour ces enfants qui n&apos;ont jamais mis les pieds à l&apos;école mais qui veulent bien apprendre à lire, à écrire...
-					</p>
+					</p>*/}
 				</div>
 			</div>
 		</div>
@@ -68,36 +68,27 @@ Nous puisons un avenir prospère pour ces enfants qui n&apos;ont jamais mis les 
 						<div className="cover-activite__icon">
 							<Icon icon={["fas", "hand-holding-dollar"]} />
 						</div>
-						<h2 className="cover-activite__title">Agir</h2>
+						<h2 className="cover-activite__title">Jeunes productifs</h2>
 						<p className="cover-activite__text">
-							Fusce lacinia fringilla lectus, non condimentum ligula fermentum id.
-							Aenean porttitor aliquet leo, in faucibus metus pretium id. Sed volutpat
-							dignissim scelerisque. Aenean molestie odio libero, vel condimentum risus
-							iaculis vitae.
+							Nous essayons de tout coeur de remettre nos jeunes dans la bonne voie, pour échapper à la pauvreté et s&apos;entraider mutuellement pour la réussite tant de notre pays tout entier que de nos familles. Tout cela passe à travers des formations diverses et variées pour inciter les jeunes et les chômeurs à travailler.
 						</p>
 					</li>
 					<li className="cover-activite__item cover-activite__item--big bg-t">
 						<div className="cover-activite__icon">
 							<Icon icon={["fas", "newspaper"]} />
 						</div>
-						<h2 className="cover-activite__title">Former</h2>
+						<h2 className="cover-activite__title">Femmes fortes</h2>
 						<p className="cover-activite__text">
-							Fusce lacinia fringilla lectus, non condimentum ligula fermentum id.
-							Aenean porttitor aliquet leo, in faucibus metus pretium id. Sed volutpat
-							dignissim scelerisque. Aenean molestie odio libero, vel condimentum risus
-							iaculis vitae.
+							Nous apportons tout aussi notre aide aux femmes, pour qu&apos;elles mettent à contribution leurs talents pour la société. Nous façonnerons aussi de leurs mains un avenir où ils deviennent productif vis-à-vis de l&apos;économie malgache.
 						</p>
 					</li>
 					<li className="cover-activite__item bg-t">
 						<div className="cover-activite__icon">
 							<Icon icon={["fas", "store"]} />
 						</div>
-						<h2 className="cover-activite__title">Espérer</h2>
+						<h2 className="cover-activite__title">Aide aux démunis</h2>
 						<p className="cover-activite__text">
-							Fusce lacinia fringilla lectus, non condimentum ligula fermentum id.
-							Aenean porttitor aliquet leo, in faucibus metus pretium id. Sed volutpat
-							dignissim scelerisque. Aenean molestie odio libero, vel condimentum risus
-							iaculis vitae.
+							Nous allons constament organiser des évènements majeurs pour apporter notre aide aux démunis et aux plus faibles comme les personnes âgés qui peinent à survivre dans les rues. Nous avons besoin de toute l&apos;aide possible pour achever tous nos objectifs.
 						</p>
 					</li>
 				</ul>

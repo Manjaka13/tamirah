@@ -77,7 +77,7 @@ const CONTACTS = [
 	},
 	{
 		icon: ["fas", "envelope"],
-		content: "juquinina@gmail.com",
+		content: "tamirahfleurdevie@gmail.com",
 	},
 	{
 		icon: ["fab", "facebook"],

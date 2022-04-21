@@ -79,7 +79,7 @@ const Footer = () => {
 								</p>
 								{!loading && !submited && (
 									<form
-										action="https://formsubmit.co/2f90e4ca711705dcb6074424e2bdb756"
+										action="https://formsubmit.co/tamirahfleurdevie@gmail.com"
 										method="POST"
 										className="f-r-st-ce mg-t-20 b-b"
 									>
